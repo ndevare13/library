@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+
+<body>
+    <div id="main-body">
+        <header>
+            <h1>My Library</h1>
+            <p>Add your books to the shelf to maintain your own library!</p>
+        </header>
+        <div id="container">
+            <div id="addButtonDiv" class="card">
+                <div class="add">
+                    <button id="addButton"><i class="fas fa-plus-square"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="form-body" class="hide-div">
+        <form>
+            <div>
+                <h4>Add a book!</h4>
+                <div>
+                    <label for="title">Title : </label>
+                    <input id="title" type="text" required>
+                </div>
+                <div>
+                    <label for="author">Author : </label>
+                    <input id="author" type="text" required>
+                </div>
+                <div>
+                    <label for="pages">Number of pages : </label>
+                    <input id="pages" type="number" required>
+                </div>
+                <div id="isRead">
+                    <legend>Have you read this book yet?</legend>
+                    <input id="bookReadYes" type="radio" name="isRead" value="true">
+                    <label>Yes</label>
+                    <input id="bookReadNo" type="radio" name="isRead" value="false">
+                    <label>No</label>
+                </div>
+                <div id="button-div">
+                    <button id="add-book" type="submit">Add to your shelf!</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
