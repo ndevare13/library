@@ -33,8 +33,10 @@ function addBookToLibrary(book) {
 addButton.addEventListener('click', event => {
     event.preventDefault();
 
-    mainBody.classList.add('hide-div');
-    formBody.classList.remove('hide-div');
+    formBody.style.display = 'block';
+    mainBody.style.opacity = '10%';
+    // mainBody.classList.add('hide-div');
+    // formBody.classList.remove('hide-div');
 });
 
 addBookButton.addEventListener('click', event => {
@@ -48,8 +50,10 @@ addBookButton.addEventListener('click', event => {
     const bookToAdd = new Book(title, auther, pages, isRead);
     addBookToLibrary(bookToAdd);
 
-    formBody.classList.add('hide-div');
-    mainBody.classList.remove('hide-div');
+    // formBody.classList.add('hide-div');
+    // mainBody.classList.remove('hide-div');
+    formBody.style.display = 'none';
+    mainBody.style.opacity = '100%';
 
     document.querySelector('#title').value = '';
     document.querySelector('#author').value = '';
