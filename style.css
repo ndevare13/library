@@ -51,6 +51,7 @@ p {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     min-width: 307px;
     min-height: 230px;
+    color: black;
 }
 
 .grid-items {
@@ -113,6 +114,7 @@ form>div {
     background-color: #99b898;
     width: 20%;
     min-width: 370px;
+    color: black;
 }
 
 form>div>h4 {
