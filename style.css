@@ -59,6 +59,8 @@ p {
 .grid-items {
     position: relative;
     bottom: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
 .grid-items p {
@@ -173,6 +175,8 @@ form button {
     justify-self: center;
     align-self: center;
     font-size: 1.2em;
+    background-color: #2a363b;
+    color: white;
 }
 
 form #button-div {
@@ -185,4 +189,14 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.card .grid-items button {
+    width: 80%;
+    height: 2em;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.2em;
+    background-color: #2a363b;
+    color: white;
 }
