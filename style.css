@@ -57,7 +57,6 @@ p {
 }
 
 .grid-items {
-    /* padding: 2px 16px; */
     position: relative;
     bottom: 1em;
 }
@@ -144,7 +143,6 @@ form>div>h4 {
 form input[type="text"],
 form input[type="number"] {
     width: 100%;
-    /* height: 2em; */
     font-size: 1.2em;
     position: relative;
     top: 15%;
@@ -188,14 +186,3 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
-
-/*.hide-div {
-    width: 100px;
-    height: 100px;
-    z-index: -1;
-    position: absolute;
-    top: -500px;
-    left: -500px;
-    transition: 3s;
-}*/
